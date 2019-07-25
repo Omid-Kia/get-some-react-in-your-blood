@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import {createStore} from 'redux'
-import Form from './components/Form.js';
+import Login from './containers/Login';
 
 function App() {
   return (
     <div className="App">
-      <Form/>
+      <Login/>
     </div>
   );
 }
