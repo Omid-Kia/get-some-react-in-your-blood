@@ -3,9 +3,13 @@ import Form from '../components/Form';
 
 export default class Login extends React.Component {
 
+submitHandler = (event) => {
+  alert("Surprise motherfucker");
+
+}
   render() {
     return(
-      <Form fields={[{name: 'username', type: 'text'},{name: 'password', type: 'password'}]} />
+      <Form onSubmit={this.submitHandler} fields={[{name: 'username', type: 'text', required: true},{name: 'password', type: 'password', required: true}]} />
     )
   }
 }
