@@ -31,7 +31,7 @@ export default class Form extends React.Component {
       }}
     )
     if (isValid) {
-      this.props.onSubmit()
+      this.props.onSubmit(this.state)
     }
   }
   render() {

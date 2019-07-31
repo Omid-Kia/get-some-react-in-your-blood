@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import Login from './Login'
 import Modal from '../components/Modal'
 import { toggleModal } from '../actions';
+
 class Main extends React.Component {
  showForm = () => {
     this.props.toggleModal()
